@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80">
+  <defs>
+    <linearGradient id="faceTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF6B00"/>
+      <stop offset="100%" stop-color="#E55A00"/>
+    </linearGradient>
+    <linearGradient id="faceLeft" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1A1A1A"/>
+      <stop offset="100%" stop-color="#2C2C2C"/>
+    </linearGradient>
+    <linearGradient id="faceRight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#333333"/>
+      <stop offset="100%" stop-color="#444444"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Isometric cube: top face -->
+  <polygon points="40,8 68,24 40,40 12,24" fill="url(#faceTop)"/>
+  <!-- Left face -->
+  <polygon points="12,24 40,40 40,72 12,56" fill="url(#faceLeft)"/>
+  <!-- Right face -->
+  <polygon points="68,24 40,40 40,72 68,56" fill="url(#faceRight)"/>
+
+  <!-- Edge highlights -->
+  <polyline points="40,8 68,24 68,56 40,72 12,56 12,24 40,8" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="0.8"/>
+  <line x1="40" y1="8" x2="40" y2="72" stroke="rgba(255,255,255,0.1)" stroke-width="0.6"/>
+  <line x1="12" y1="24" x2="68" y2="24" stroke="rgba(255,255,255,0.08)" stroke-width="0.6"/>
+
+  <!-- Alert notch cut into top-right edge — symbolises "risk" -->
+  <polygon points="58,16 68,24 58,24" fill="#FF8C33" opacity="0.7"/>
+</svg>
